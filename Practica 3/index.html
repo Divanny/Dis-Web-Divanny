@@ -1,0 +1,189 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Divanny Pérez</title> 
+        <link href = "css/bootstrap.min.css" rel = "stylesheet">
+        <link href = "css/style.css" rel = "StyleSheet" type = "text/css">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <style>
+            .table-striped > tbody > tr:nth-child(even)>td, .table-striped > tbody > tr:nth-child(even) > th 
+            {
+                background-color: #c2c2c2;
+            }
+            .table-striped > tbody > tr:nth-child(odd)>td, .table-striped > tbody > tr:nth-child(odd) > th 
+            {
+                background-color: rgb(255, 255, 255);
+            }
+        </style>
+    </head> 
+    <body> 
+        <div class = "container-fluid" style = "background: #33333D;">
+            <h1 class = "titulo">Divanny Pérez</h1>
+            <h2 class = "subtitulo">Práctica 3</h1>
+        </div> 
+        <div style = "padding-top: 20px"></div>
+        <div class = "container" style = "background-color: #FFFFFF; border: 2px solid black">
+            <div class = "row"  style = "border-top: 1px solid #898992">
+                <div class = "col-lg-12"  style = "background-color: #33333D;">
+                    <h1 style = "color: #FFFFFF;">Form: control select</h1> 
+                </div>
+            </div>
+            <div style = "padding-top: 40px"></div>
+            <form role = "form">
+                <label for = "title">Seleccione la película que más le gustó de estas:</label>
+                <select class = "form-control" id = "title"> 
+                    <option>Misión de Rescate</option> 
+                    <option>Creed</option>
+                    <option>Proyecto Power</option> 
+                    <option>Escuadrón 6</option> 
+                    <option>Bad Boys For Life</option> 
+                </select> 
+                <div style = "padding-top: 10px"></div>
+                <label for = "title2">Seleccione más de una película:</label>
+                <select multiple class = "form-control" id = "title2"> 
+                    <option>Misión de Rescate</option> 
+                    <option>Creed</option>
+                    <option>Proyecto Power</option> 
+                    <option>Escuadrón 6</option>    
+                    <option>Bad Boys For Life</option> 
+                </select>
+                <div style = "padding-top: 10px"></div> 
+                <button type = "submit" class = "btn btn-default">Enviar</button>     
+            </form>
+            <div style = "padding-top: 40px"></div>
+            <div class = "row"  style = "border-top: 1px solid #898992">
+                <div class = "col-lg-12"  style = "background-color: #33333D;">
+                    <h1 style = "color: #FFFFFF;">Form: formulario en una línea</h1> 
+                </div>
+            </div>
+            <div style = "padding-top: 40px"></div>
+            <form class = "form-inline" role = "form">
+                <label for = "title">Seleccione la película que más le gustó de estas:</label>
+                <select class = "form-control" id = "title"> 
+                    <option>Misión de Rescate</option> 
+                    <option>Creed</option>
+                    <option>Proyecto Power</option> 
+                    <option>Escuadrón 6</option> 
+                    <option>Bad Boys For Life</option> 
+                </select> 
+                <div style = "padding-top: 10px"></div>
+                <label for = "title2">Seleccione más de una película:</label>
+                <select multiple class = "form-control" id = "title2"> 
+                    <option>Misión de Rescate</option> 
+                    <option>Creed</option>
+                    <option>Proyecto Power</option> 
+                    <option>Escuadrón 6</option>    
+                    <option>Bad Boys For Life</option> 
+                </select>
+                <div style = "padding-top: 10px"></div> 
+                <button type = "submit" class = "btn btn-default">Enviar</button>     
+            </form>
+            <div style = "padding-top: 40px"></div>
+            <div class = "row"  style = "border-top: 1px solid #898992">
+                <div class = "col-lg-12"  style = "background-color: #33333D;">
+                    <h1 style = "color: #FFFFFF;">Form: formulario horizontal</h1> 
+                </div>
+            </div>
+            <div style = "padding-top: 40px"></div>
+            <form class = "form-horizontal" role = "form">
+                <div class = "form-group"> 
+                    <label for = "correo">Ingrese su correo electrónico:</label>
+                    <input type = "text" class = "form-control" id = "correo">
+                </div> 
+                <div class = "form-group"> 
+                    <label for = "contra">Ingrese su contraseña:</label>
+                    <input type = "password" class = "form-control" id = "contra">
+                </div> 
+                <button type = "submit" class = "btn btn-default">Enviar</button>  
+            </form>
+            <div style = "padding-top: 40px"></div>
+            <div class = "row"  style = "border-top: 1px solid #898992">
+                <div class = "col-lg-12"  style = "background-color: #33333D;">
+                    <h1 style = "color: #FFFFFF;">Form: control y grupo de controles HTML deshabilitados</h1> 
+                </div>
+            </div>
+            <div style = "padding-top: 40px"></div>
+            <form role = "form">
+                <fieldset disabled>
+                    <div class = "form-group"> 
+                        <label for = "correo">Ingrese su correo electrónico:</label>
+                        <input type = "text" class = "form-control" id = "correo">
+                    </div> 
+                    <div class = "form-group"> 
+                        <label for = "contra">Ingrese su contraseña:</label>
+                        <input type = "password" class = "form-control" id = "contra">
+                    </div> 
+                    <button type = "submit" class = "btn btn-default">Enviar</button>  
+                </fieldset>
+            </form>
+            <div style = "padding-top: 40px"></div>
+            <div class = "row"  style = "border-top: 1px solid #898992">
+                <div class = "col-lg-12"  style = "background-color: #33333D;">
+                    <h1 style = "color: #FFFFFF;">Button: estilos</h1> 
+                </div>
+            </div>
+            <div style = "padding-top: 40px"></div>
+            <form role = "form" style = "text-align: center;">
+                <button type = "submit" class = "btn btn-default">Enviar</button>  
+                <button type = "submit" class = "btn btn-primary">Enviar</button>  
+                <button type = "submit" class = "btn btn-success">Enviar</button>  
+                <button type = "submit" class = "btn btn-warning">Enviar</button>  
+                <button type = "submit" class = "btn btn-danger">Enviar</button>  
+                <button type = "submit" class = "btn btn-link">Enviar</button>  
+            </form>
+            <div style = "padding-top: 40px"></div>
+            <div class = "row"  style = "border-top: 1px solid #898992">
+                <div class = "col-lg-12"  style = "background-color: #33333D;">
+                    <h1 style = "color: #FFFFFF;">Button: tamaño</h1> 
+                </div>
+            </div>
+            <div style = "padding-top: 40px"></div>
+            <form role = "form" style = "text-align: center;">
+                <button type = "submit" class = "btn btn-primary btn-xs">Enviar</button>  
+                <button type = "submit" class = "btn btn-success btn-sm">Enviar</button>  
+                <button type = "submit" class = "btn btn-warning btn-lg">Enviar</button>  
+                <div style = "padding-top: 14px"></div>
+                <button type = "submit" class = "btn btn-danger btn-block">Enviar</button>  
+            </form>
+            <div style = "padding-top: 40px"></div>
+            <div class = "row"  style = "border-top: 1px solid #898992">
+                <div class = "col-lg-12"  style = "background-color: #33333D;">
+                    <h1 style = "color: #FFFFFF;">Button: desactivado</h1> 
+                </div>
+            </div>
+            <div style = "padding-top: 40px"></div>
+            <form role = "form" style = "text-align: center;">
+                <button type = "submit" class = "btn btn-danger btn-block" disabled = "disabled">Enviar</button> 
+                <button type = "submit" class = "btn btn-danger btn-block">Enviar</button>  
+            </form>
+            <div style = "padding-top: 40px"></div>
+            <div class = "row"  style = "border-top: 1px solid #898992">
+                <div class = "col-lg-12"  style = "background-color: #33333D;">
+                    <h1 style = "color: #FFFFFF;">Button: grupo de botones, barra de herramientas y tamaños.</h1> 
+                </div>
+            </div>
+            <div style = "padding-top: 40px"></div>
+            <form role = "form" style = "text-align: center;">
+                <div class = "btn-group">
+                    <button type = "submit" class = "btn btn-success">Grupo</button>
+                    <button type = "submit" class = "btn btn-success">de</button>
+                    <button type = "submit" class = "btn btn-success">botones</button>
+                </div>
+                <div style = "padding-top: 10px"></div>
+                <div class = "btn-group">
+                    <button type = "submit" class = "btn btn-success">Barra</button>
+                    <button type = "submit" class = "btn btn-success">de</button>
+                    <button type = "submit" class = "btn btn-success">herramientas</button>
+                </div>
+                <div style = "padding-top: 10px"></div>
+                <div class = "btn-group btn-group-xs">
+                    <button type = "submit" class = "btn btn-success">Barra</button>
+                    <button type = "submit" class = "btn btn-success">de</button>
+                    <button type = "submit" class = "btn btn-success">herramientas</button>
+                    <button type = "submit" class = "btn btn-success">pequeña.</button>
+                </div>
+            </form>
+            <div style = "padding-top: 40px"></div>
+        </div>
+    </body> 
+</html>
