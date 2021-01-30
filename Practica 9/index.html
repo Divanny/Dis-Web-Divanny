@@ -1,0 +1,145 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Divanny Pérez</title> 
+        <link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href = "css/style.css" rel = "StyleSheet" type = "text/css">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+    </head> 
+    <body> 
+        <div class = "container-fluid" style = "background: #33333D; padding: 15px 0px;">
+            <h1 class = "titulo">Divanny Pérez</h1>
+            <h2 class = "subtitulo">Práctica 9</h1>
+        </div>
+        <div style = "padding-top: 20px"></div>
+        <div class = "container" style = "background-color: #FFFFFF; border: 2px solid black">
+            <div class = "row"  style = "border-top: 1px solid #898992">
+                <div class = "col-lg-12"  style = "background-color: #33333D;">
+                    <h1 style = "color: #FFFFFF;">Form: control select</h1> 
+                </div>
+            </div>
+            <div style = "padding-top: 40px"></div>
+            <form role = "form">
+                <label for = "title">Seleccione la película que más le gustó de estas:</label>
+                <select class = "form-control" id = "title"> 
+                    <option>Misión de Rescate</option> 
+                    <option>Creed</option>
+                    <option>Proyecto Power</option> 
+                    <option>Escuadrón 6</option> 
+                    <option>Bad Boys For Life</option> 
+                </select> 
+                <div style = "padding-top: 10px"></div>
+                <label for = "title2">Seleccione más de una película:</label>
+                <select multiple class = "form-control" id = "title2"> 
+                    <option>Misión de Rescate</option> 
+                    <option>Creed</option>
+                    <option>Proyecto Power</option> 
+                    <option>Escuadrón 6</option>    
+                    <option>Bad Boys For Life</option> 
+                </select>
+                <div style = "padding-top: 10px"></div> 
+                <button type = "submit" class = "btn btn-default">Enviar</button>     
+            </form>
+            <div style = "padding-top: 40px"></div>
+            <div class = "row"  style = "border-top: 1px solid #898992">
+                <div class = "col-lg-12"  style = "background-color: #33333D;">
+                    <h1 style = "color: #FFFFFF;">Form: formulario horizontal</h1> 
+                </div>
+            </div>
+            <div style = "padding-top: 40px"></div>
+            <form>
+                <div class="form-group row"> 
+                    <label for = "correo" class = "col-lg-3 col-form-label">Ingrese su correo electrónico:</label>
+                    <div class = "col-lg-9">
+                        <input type = "text" class = "form-control" id = "correo">
+                    </div>
+                </div> 
+                <div class="form-group row"> 
+                    <label for = "contra" class = "col-lg-3 col-form-label">Ingrese su contraseña:</label>
+                    <div class = "col-lg-9">
+                        <input type = "password" class = "form-control" id = "contra">
+                    </div>
+                </div> 
+                <div class="form-group row"> 
+                    <div class = "col-lg-9">
+                        <button type = "submit" class = "btn btn-default">Enviar</button>  
+                    </div>
+                </div> 
+            </form>
+            <div style = "padding-top: 40px"></div>
+            <div class = "row"  style = "border-top: 1px solid #898992">
+                <div class = "col-lg-12"  style = "background-color: #33333D;">
+                    <h1 style = "color: #FFFFFF;">Form: formulario en una línea</h1> 
+                </div>
+            </div>
+            <div style = "padding-top: 40px"></div>
+            <form class = "form-inline" role = "form">
+                <div style = "padding-top: 10px"></div>
+                <label for = "title2" class = "mr-sm-2">Seleccione las películas que desea ver:</label>
+                <select multiple class = "form-control " id = "title2" > 
+                    <option>Misión de Rescate</option> 
+                    <option>Creed</option>
+                    <option>Proyecto Power</option> 
+                    <option>Escuadrón 6</option>    
+                    <option>Bad Boys For Life</option> 
+                </select>
+                <div style = "padding-top: 10px"></div> 
+                <button type = "submit" class = "btn btn-default ml-sm-2">Enviar</button>     
+            </form>
+            <div style = "padding-top: 40px"></div>
+            <div class = "row"  style = "border-top: 1px solid #898992">
+                <div class = "col-lg-12"  style = "background-color: #33333D;">
+                    <h1 style = "color: #FFFFFF;">Form: tamaño de los controles de formulario</h1> 
+                </div>
+            </div>
+            <div style = "padding-top: 20px"></div>
+            <form role = "form">    
+                <div class = "form-group"> 
+                    <label for = "comments">Ingrese los comentarios a la página:</label>
+                    <textarea class = "form-control form-control-sm" rows = "6" id = "comments" placeholder = "control chiquito"></textarea>
+                </div> 
+                <button type  ="submit" class = "btn btn-default">Enviar</button>     
+            </form>
+            <div style = "padding-top: 40px"></div>
+
+            <div class = "row"  style = "border-top: 1px solid #898992">
+                <div class = "col-lg-12"  style = "background-color: #33333D;">
+                    <h1 style = "color: #FFFFFF;">Form: texto de ayuda de un control & control y grupo de controles HTML deshabilitados</h1> 
+                </div>
+            </div>
+            <div style = "padding-top: 20px"></div>
+            <form role = "form">
+                <div class="form-group"> 
+                    <label for = "usuario">Ingrese el nombre de usuario de su cuenta:</label>
+                    <input type = "text" class = "form-control" id = "correo">
+                    <small class = "form-text text-muted">No puede contener espacios el nombre de usuario que elijas.</small>
+                </div> 
+                <fieldset disabled>
+                    <div class="form-group"> 
+                        <label for = "contra">Ingrese su contraseña:</label>
+                        <input type = "password" class = "form-control" id = "contra">
+                        <small class = "form-text text-muted">Debe contener al menos 8 carácteres y números.</small>
+                    </div> 
+                </fieldset>
+                <button type  ="submit" class = "btn btn-default">Enviar</button>     
+            </form>
+            <div style = "padding-top: 40px"></div>
+
+            <div class = "row"  style = "border-top: 1px solid #898992">
+                <div class = "col-lg-12"  style = "background-color: #33333D;">
+                    <h1 style = "color: #FFFFFF;">Button: estilos y tamaño.</h1> 
+                </div>
+            </div>
+            <div style = "padding-top: 20px"></div>
+            <form role = "form">
+                <button type="submit" class="btn btn-danger btn-sm btn-block">Atrás</button>
+                <button type="submit" class="btn btn-success btn-sm btn-block">Siguiente</button>    
+            </form>
+            <div style = "padding-top: 20px"></div>
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>     
+</html>
