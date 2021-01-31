@@ -1,0 +1,36 @@
+@font-face
+{
+  font-family: "Trade";
+  src: url("../font/Trade-Gothic-LT-Bold.ttf") format("truetype");
+}
+@font-face
+{
+  font-family: "Trade Light";
+  src: url("../font/Trade Gothic LT.ttf") format("truetype");
+}
+
+body
+{
+    background-image: url("https://open.kattis.com/images/site/content/kattis-grain.png");
+    margin: 0;
+}
+
+.titulo
+{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Trade";
+    letter-spacing: 5px;
+    color: #ffffff;
+}
+
+.subtitulo
+{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Trade Light";
+    font-weight: bold;
+    color: #898992;
+}
